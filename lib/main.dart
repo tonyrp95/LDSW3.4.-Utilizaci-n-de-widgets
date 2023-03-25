@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => MyAppState(),
       child: MaterialApp(
-        title: 'Namer App',
+        title: 'Welcome to Flutter',
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
@@ -36,12 +36,11 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       body: Column(
-        children: [
-          Text(
-  'El texto aquí',
-  textAlign: TextAlign.center,
-),
+        children:[
+          Text('Welcome to Flutter',textAlign: TextAlign.center,),
           Text(appState.current.asLowerCase),
+          Text('Hello World',textAlign: TextAlign.center,style: TextStyle(
+          fontSize: 20.0),),
         ],
       ),
     );
