@@ -39,10 +39,19 @@ class MyHomePage extends StatelessWidget {
         children:[
           Text('Welcome to Flutter',textAlign: TextAlign.center,),
           Text(appState.current.asLowerCase),
-          Text('Hello World',textAlign: TextAlign.center,style: TextStyle(
+          Text('Hola dominic',textAlign: TextAlign.center,style: TextStyle(
           fontSize: 20.0),),
+          Text(''),
+          Row( ),
+          Column( ),
+          Stack( ),
+          Container( ),
         ],
+         
       ),
-    );
+      
+    ); 
+    
   }
+  
 }
