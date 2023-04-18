@@ -32,26 +32,31 @@ class MyAppState extends ChangeNotifier {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var appState = context.watch<MyAppState>();
-
-    return Scaffold(
-      body: Column(
-        children:[
-          Text('Welcome to Flutter',textAlign: TextAlign.center,),
-          Text(appState.current.asLowerCase),
-          Text('Hola dominic',textAlign: TextAlign.center,style: TextStyle(
-          fontSize: 20.0),),
-          Text(''),
-          Row( ),
-          Column( ),
-          Stack( ),
-          Container( ),
-        ],
-         
+    return Column(
+     children: [
+    Padding(
+      padding: EdgeInsets.all(2),
+      child: Image(
+        image: NetworkImage('https://png.pngtree.com/png-vector/20190816/ourlarge/pngtree-film-logo-design-template-vector-isolated-illustration-png-image_1693431.jpg'),
+        height: 300,
       ),
-      
-    ); 
+
+    ),
+    Text('Hello World', style: TextStyle(
+            fontSize: 32,
+            color: Colors.black87,
+          )),
     
+      Icon(
+              Icons.account_box,
+              color: Colors.blue[500],
+            ),
+        
+  ],
+        
+    );
   }
   
 }
+
+
